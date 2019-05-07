@@ -31,7 +31,7 @@ public class ActivitiApplication {
         SpringApplication.run(ActivitiApplication.class, args);
     }
 
-//初始化模拟数据
+    //初始化模拟数据
     @Bean
     public CommandLineRunner init(final ActivitiService myService) {
         return new CommandLineRunner() {

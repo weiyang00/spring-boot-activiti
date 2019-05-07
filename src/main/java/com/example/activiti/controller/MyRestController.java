@@ -36,7 +36,7 @@ public class MyRestController {
 	@RequestMapping(value = "/complete/{joinApproved}/{taskId}/{money}", method = RequestMethod.GET)
 	public String complete(@PathVariable Boolean joinApproved, @PathVariable String taskId, @PathVariable Long money) {
 		myService.completeTasks(joinApproved, taskId, money);
-		return "ok";
+		return "SUCCESS";
 	}
 	
 	//Task的dto
